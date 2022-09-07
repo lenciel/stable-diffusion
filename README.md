@@ -1,19 +1,18 @@
-<h1 align='center'><b>Stable Diffusion Dream Script</b></h1>
+<h1 align='center'><b>Stable Diffusion MK Version</b></h1>
 
 <p align='center'>
-<img src="static/logo_temp.png"/>
+<img src="static/avatar.jpeg"/>
 </p>
 
 <p align="center">
-    <img src="https://img.shields.io/github/last-commit/lstein/stable-diffusion?logo=Python&logoColor=green&style=for-the-badge" alt="last-commit"/>
-    <img src="https://img.shields.io/github/stars/lstein/stable-diffusion?logo=GitHub&style=for-the-badge" alt="stars"/>
+    <img src="https://img.shields.io/github/last-commit/lenciel/stable-diffusion?logo=Python&logoColor=green&style=for-the-badge" alt="last-commit"/>
+    <img src="https://img.shields.io/github/stars/lenciel/stable-diffusion?logo=GitHub&style=for-the-badge" alt="stars"/>
     <br>
-    <img src="https://img.shields.io/github/issues/lstein/stable-diffusion?logo=GitHub&style=for-the-badge" alt="issues"/>
-    <img src="https://img.shields.io/github/issues-pr/lstein/stable-diffusion?logo=GitHub&style=for-the-badge" alt="pull-requests"/>
+    <img src="https://img.shields.io/github/issues/lenciel/stable-diffusion?logo=GitHub&style=for-the-badge" alt="issues"/>
+    <img src="https://img.shields.io/github/issues-pr/lenciel/stable-diffusion?logo=GitHub&style=for-the-badge" alt="pull-requests"/>
 </p>
 
-This is a fork of CompVis/stable-diffusion, the wonderful open source
-text-to-image generator. This fork supports:
+This is a fork of lstein/stable-diffusion, which based on the wonderful open source text-to-image generator stable-diffusion but addding supports for M1/M2 chips and much more:
 
 1. An interactive command-line interface that accepts the same prompt
    and switches as the Discord bot.
@@ -37,7 +36,7 @@ images together to combine the best features of both.
 
 8. Textual inversion for customization of the prompt language and images.
 
-8. ...and more!
+9. ...and more!
 
 This fork is rapidly evolving, so use the Issues panel to report bugs
 and make feature requests, and check back periodically for
@@ -340,7 +339,7 @@ To train, prepare a folder that contains images sized at 512x512 and execute the
 
 
 WINDOWS: As the default backend is not available on Windows, if you're using that platform, set the environment variable `PL_TORCH_DISTRIBUTED_BACKEND=gloo`
-    
+
 ```
 (ldm) ~/stable-diffusion$ python3 ./main.py --base ./configs/stable-diffusion/v1-finetune.yaml \
                                             -t \
@@ -431,8 +430,8 @@ There are separate installation walkthroughs for [Linux](#linux), [Windows](#win
 
 ```
 ~$  wget https://repo.anaconda.com/archive/Anaconda3-2022.05-Linux-x86_64.sh
-~$  chmod +x Anaconda3-2022.05-Linux-x86_64.sh 
-~$  ./Anaconda3-2022.05-Linux-x86_64.sh  
+~$  chmod +x Anaconda3-2022.05-Linux-x86_64.sh
+~$  ./Anaconda3-2022.05-Linux-x86_64.sh
 ```
 
 After installing anaconda, you should log out of your system and log back in. If the installation
